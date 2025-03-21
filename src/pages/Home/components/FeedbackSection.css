@@ -1,0 +1,121 @@
+/* Feedback Section */
+.feedback-section {
+  background-color: #8084619a;
+  padding: 30px;
+  margin-left: 250px;
+  border-radius: 15px;
+  width: 1350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Feedback Header */
+.feedback-header {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5a3727;
+  margin-bottom: 20px;
+}
+
+/* Feedback Container */
+.feedback-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Feedback Image */
+.feedback-image img {
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Feedback List */
+.feedback-list {
+  position: relative;
+  flex: 1;
+}
+
+/* Feedback Items */
+.feedback-item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background-color: #f7f3eb;
+  border-radius: 25px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 600px;
+  gap: 15px;
+}
+
+/* Dynamic Positioning for Each Feedback Item */
+.feedback-item-1 {
+  top: 0;
+  left: 50px;
+}
+
+.feedback-item-2 {
+  top: 100px;
+  left: 100px;
+}
+
+.feedback-item-3 {
+  top: 200px;
+  left: 50px;
+}
+
+.feedback-item-4 {
+  top: 300px;
+  left: 100px;
+}
+
+.feedback-item-5 {
+  top: 400px;
+  left: 50px;
+}
+
+/* Feedback Avatar (Now Uses Profile Image) */
+.feedback-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden; /* Ensures circular shape */
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Feedback Text */
+.feedback-text {
+  font-size: 1rem;
+  color: #5a3727;
+  flex: 1;
+}
+
+/* Feedback Call-to-Action */
+.feedback-cta {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Add Feedback Button */
+.add-feedback-button {
+  background-color: #4f3434;
+  color: rgb(234, 235, 214);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-feedback-button:hover {
+  background-color: #634040;
+}

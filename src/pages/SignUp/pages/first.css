@@ -1,0 +1,47 @@
+.container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    background-color: #ece4d1;
+    padding: 20px;
+  }
+  
+  .serum-image {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px; /* Reduced bottom margin */
+  }
+  
+  h2 {
+    font-size: 32px; /* Increased font size */
+    font-weight: bold;
+    color: black;
+    margin: 10px 0; /* Adjusted spacing */
+  }
+  
+  .username {
+    color: #5a3fc8;
+  }
+  
+  .description {
+    font-size: 20px; /* Increased font size */
+    color: #444;
+    margin: 5px 0;
+  }
+  
+  .continue-button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  .continue-button:hover {
+    background-color: #333;
+  }
+  

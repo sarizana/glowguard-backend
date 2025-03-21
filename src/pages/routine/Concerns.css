@@ -1,0 +1,74 @@
+.concerns-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .concerns-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .concern-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f8f8;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 80%;
+    justify-content: center;
+  }
+  
+  .concern-item.checked {
+    background: #6a5acd;
+    color: white;
+  }
+  
+  .concern-item input {
+    display: none;
+  }
+  
+  .concern-text {
+    font-size: 1rem;
+  }
+  
+  /* ✅ Fixed "Show More Concerns" Button */
+  .show-more {
+    background: none;
+    border: none;
+    color: #4b34d3;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .show-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* ✅ Styling for 'None of these concerns' */
+  .none-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .none-option input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .none-option label {
+    font-size: 1rem;
+    cursor: pointer;
+    color: #333;
+    font-weight: 500;
+  }
+  

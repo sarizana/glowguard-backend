@@ -1,0 +1,129 @@
+/* Contact Us Section */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+    background-color: #F8F3EE;
+  }
+  
+  .contact-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 1000px; /* Box is now bigger */
+    width: 90%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left Section */
+  .contact-info {
+    width: 45%;
+    text-align: left;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5A3727;
+  }
+  
+  .contact-text {
+    font-size: 1.09rem;
+    color: #080605;
+    margin-bottom: 20px;
+  }
+  
+  .contact-email {
+    font-size: 1.09rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: #100d0b;
+    height: 40px;
+  }
+  
+  .social-text {
+    margin-top: 20px;
+    font-size: 1.09rem;
+    color: #050403;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.6rem;
+    color: #5A3727;
+  }
+  
+  .social-icons i {
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .social-icons i:hover {
+    color: #A68556;
+  }
+  
+  /* Right Section - Contact Form */
+  .contact-form {
+    width: 50%;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .name-fields {
+    display: flex;
+    justify-content: space-between; /* Fixes uneven name fields */
+    gap: 10px;
+  }
+  
+  .name-fields input {
+    width: 48%; /* Both name fields are equal now */
+  }
+  
+  
+  .email{
+    display: flex;
+    width: 506px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 14px; /* Increased for better spacing */
+    border: 1px solid #C7B9A2;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  textarea {
+    height: 120px;
+    width: 480px; /* Bigger textarea */
+  }
+  
+  .send-button {
+    width: 103%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #5A3727;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .send-button:hover {
+    background-color: #A68556;
+  }

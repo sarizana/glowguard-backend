@@ -1,0 +1,40 @@
+.first-section {
+    background-color: #f8f2e6; /* Light beige background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .text-section {
+    text-align: center;
+    color: black;
+  }
+  
+ 
+  
+  .image {
+    width: 700px;
+    height: 650px;
+  }
+  
+ 
+  
+  .paragraph-section {
+    max-width: 1200px;
+    margin-top: 20px;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+  }
+  

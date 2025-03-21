@@ -1,0 +1,354 @@
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  padding: 60px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #FAF3E0; /* Background color to match */
+ 
+}
+
+.navbar-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px; /* Added padding for better spacing */
+}
+
+.logo {
+  position:absolute;
+  right:87rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5A3727;
+  flex: 1; /* Pushes everything else to center */
+  text-align: left; /* Aligns the text to the left */
+}
+
+/* 🔹 Navigation Links */
+.nav-links {
+  position:absolute;
+  right:25rem;
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+
+.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  color: #5A3727;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  border-radius: 50px;
+  padding: 1px 20px;
+}
+
+.nav-links li a:hover {
+  color: #D6B899;
+  background: rgba(166, 133, 86, 0.15); /* Light background color */
+  border-radius: 50px; /* Makes it rounded */
+  padding: 1px 20px; /* Ensures size remains consistent */
+  transition: all 0.3s ease;
+}
+
+/* 🔹 Icons */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.nav-icons {
+  position:absolute;
+  left:85rem;
+  display: flex;
+  gap: 20px;
+  font-size: 1.8rem;
+  color: #5A3727;
+  flex: 1; /* Pushes to the right */
+  justify-content: flex-end;
+}
+
+.nav-icons i {
+  margin-left: 25px;
+  cursor: pointer;
+  color: #5A3727;
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.nav-icons i:hover {
+  color: #A68556;
+  transform: scale(1.1);
+}
+
+/* 🔹 Modern Dropdown Styling */
+.services-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.services-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.2rem;
+}
+
+/* 🔹 Glassmorphism Dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 15px 0;
+  min-width: 200px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+}
+
+.services-menu:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* 🔹 Dropdown Items */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5A3727;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.dropdown-item i {
+  font-size: 1.5rem;
+  color: #5A3727;
+}
+
+.dropdown-item:hover {
+  background: rgb(204, 177, 159);
+  transform: translateX(8px);
+}
+
+/* 🔹 Profile Menu */
+.profile-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-menu i {
+  font-size: 1.8rem;
+  color: #5A3727;
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.profile-menu i:hover {
+  color: #A68556;
+  transform: scale(1.1);
+}
+
+/* 🔹 Profile Dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 15px 0;
+  min-width: 220px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+}
+
+.profile-menu:hover .profile-dropdown,
+.profile-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* 🔹 Profile Dropdown Items */
+.profile-item {
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Centered text */
+  gap: 12px;
+  padding: 16px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5A3727;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease;
+  background: transparent; /* Remove blue highlight */
+}
+
+.profile-item:hover {
+  background: rgb(204, 177, 159);
+    transform: translateX(8px);
+}
+
+/* 🔹 Ensure no blue highlight when clicking */
+.profile-item:focus,
+.profile-item:active {
+  background: none;
+}
+
+/* 🔹 Search Icon */
+.search-icon {
+  font-size: 1.8rem; /* Match other icons */
+  cursor: pointer;
+  color: #5A3727;
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+/* 🔹 Hover Effect for Search Icon */
+.search-icon:hover {
+  color: #A68556;
+  transform: scale(1.1);
+}
+
+/* 🔹 Search Container - Aligns with Navbar */
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* 🔹 Search Box - Initially Hidden */
+.search-box {
+  position: absolute;
+  right: 0;
+  width: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  border-radius: 50px;
+}
+
+/* 🔹 When Open - Expands & Aligns with Navbar */
+.search-box.open {
+  position: absolute;
+  right: 20;
+  width: 260px; /* ✅ Increased width */
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 12px;
+  border-radius: 50px;
+}
+
+/* 🔹 Search Input */
+.search-box input {
+  flex: 1;
+  border: none;
+  font-size: 1rem;
+  margin-left: 10px;
+  padding: 8px 20px;
+  outline: none;
+  background: transparent;
+  color: #5A3727;
+  text-align: left;
+  width: 100%;
+  max-width: 120px;
+  position: absolute;
+  left: 70px;
+top:1px ;
+}
+
+/* 🔹 Input Placeholder */
+.search-box input::placeholder {
+  color: #B8865E;
+}
+
+/* 🔹 Close Button */
+.close-search {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #5A3727;
+  transition: color 0.3s ease-in-out;
+}
+
+.close-search:hover {
+  color: #A68556;
+}
+
+/* 🔹 Search in Navbar List */
+.nav-links .search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* 🔹 Search Dropdown - Initially Hidden */
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #FAF3E0; /* ✅ Matches the website theme */
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 12px 0;
+  transition: opacity 0.3s ease-in-out, transform 0.2s ease-in-out;
+  opacity: 0;
+  transform: translateY(-5px);
+  visibility: hidden;
+  z-index: 1000;
+}
+
+/* ✅ Show dropdown when user starts typing */
+.search-box.open + .search-dropdown {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+/* 🔹 Dropdown Items */
+.search-item {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #5A3727;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* ✅ Modern Hover Effect */
+.search-item:hover {
+  background: rgba(184, 134, 94, 0.2);
+  border-radius: 8px;
+  transform: translateX(5px);
+}
+
+/* 🔹 No Results Message */
+.no-result {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #B8865E;
+  padding: 10px 0;
+}

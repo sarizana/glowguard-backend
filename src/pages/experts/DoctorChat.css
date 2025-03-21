@@ -1,0 +1,101 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 785px; 
+width: 1500px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  
+}
+
+/* ✅ Header stays within box */
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #5d9c82;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.chat-doctor-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.chat-doctor-name {
+  font-weight: bold;
+}
+
+/* ✅ Messages stay inside one box */
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* ✅ Increased height */
+  width: 100%;
+  padding: 15px;
+  overflow-y: auto;
+  background: #f0f0f0;
+  border-radius: 0;
+  flex-grow: 1; /* ✅ Expands to fill available space */
+}
+
+/* ✅ Chat messages inside one container */
+.chat-message {
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin: 6px 0;
+width: 200%;
+}
+
+.chat-message.user {
+  background: #ffffff;
+  align-self: flex-end;
+}
+
+.chat-message.doctor {
+  background: #ffffff;
+  align-self: flex-start;
+}
+
+/* ✅ Input stays inside the main chat box */
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  width: 100%;
+  border-top: 1px solid #ffffff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+  outline: none;
+  font-size: 1rem;
+}
+
+.chat-input button {
+  background: #5a3727;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+.chat-input button:hover {
+  background: #8b5e3b;
+}

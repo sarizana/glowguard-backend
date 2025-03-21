@@ -1,0 +1,142 @@
+/* 🌟 Full Screen Layout */
+.ai-chat-container {
+    display: flex;
+    height: calc(100vh - 70px); /* Adjusted for navbar */
+    width: 100vw;
+    background: linear-gradient(to bottom, #F8EDE3, #efddc4);
+    padding: 20px;
+    overflow: hidden; /* Prevents extra scrollbars */
+}
+
+/* 🌟 Chat History */
+.chat-history {
+    width: 20%;
+    height: 100%;
+    background: #f8f2e6;
+    padding: 15px;
+    overflow-y: auto;
+    border-right: 2px solid #ddd;
+}
+
+/* 🌟 Chat Section */
+.chat-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    overflow: hidden;
+}
+.chat-history .history-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: #f8f2e6;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .chat-history .history-item:hover {
+    background: #f8f2e6;
+  }
+
+/* 🌟 AI Skin Analyzer Title */
+.chat-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* 🌟 White Chat Box */
+.chat-box {
+    width: 95%;
+    height: 65vh;
+    background: #F5F5DC;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: #98C1A9;
+    overflow-y: auto;
+}
+
+/* ✅ Remove extra scrollbar */
+.chat-box::-webkit-scrollbar {
+    display: none;
+}
+
+.chat-box {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* 🌟 Chat Input Container */
+.chat-input-container {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+/* 🌟 Chat Input - Normal Size */
+.chat-input {
+    flex-grow: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background: #f8f2e6;
+    width: auto;
+}
+
+/* ✅ Send Button - Corrected */
+.send-btn {
+    background: #98C1A9;
+    color: #d0c0a9;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.send-btn:hover {
+    background: #3d3c4d;
+}
+
+/* 🌟 Upload & Capture Buttons */
+.upload-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.upload-btn, .capture-btn {
+    background: #3d3c4d;
+    color: #d0c0a9;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    transition: all 0.3s ease-in-out;
+}
+
+.upload-btn:hover, .capture-btn:hover {
+    background: #98C1A9;
+}
+
+/* ✅ Ensure body does not cause double scrolling */
+body {
+    overflow: hidden;
+}

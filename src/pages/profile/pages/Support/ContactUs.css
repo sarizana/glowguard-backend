@@ -1,0 +1,36 @@
+.contactus-container {
+    text-align: left;
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+  }
+  
+  .contactus-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact-bold {
+    color: #5a49e6; /* Blue color for "Contact" */
+  }
+  
+  .contactus-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #222;
+  }
+  
+  .contactus-text {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .contactus-email {
+    font-style: italic;
+    font-size: 20px;
+    color: #222;
+  }
+  

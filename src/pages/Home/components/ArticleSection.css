@@ -1,0 +1,130 @@
+.article-section {
+  text-align: center;
+  padding: 50px 20px;
+  background:#eef1f1;
+  position: relative; /* ✅ Ensure it does not break other sections */
+}
+
+.article-header {
+  margin-bottom: 30px;
+  text-align: left;
+  padding-left: 40px;
+  font-size: 3.5rem;
+}
+
+.articlew {
+  font-size: 3.4rem; /* ✅ Increased title size */
+  color:#000000 ; 
+  font-weight: light;}
+
+.highlight {
+  color: 30061b;
+  font-style: italic;
+}
+
+.article-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.latest-text {
+  font-family: "Playfair Display", serif; /* ✅ Elegant cursive look */
+  font-style: italic;
+  color:#30061b ; 
+  font-weight: light;
+  font-size: 3.4rem; /* Increased size */
+}
+.article-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.main-article-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.article-paragraph {
+  flex: 1;
+  max-width: 400px;
+  text-align: left;
+}
+
+.read-more {
+  color: 30061b;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.article-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.article-card {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  background: #eef1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 11px;
+  margin-top: 4px;
+}
+
+.card-image {
+  width: 300px;
+  margin-left: -17px;
+  padding-bottom: -4px;
+  height: auto;
+  height: 300px;
+  border-radius: 10px;
+  border-radius: 10px;
+}
+
+.article-date {
+  font-size: 0.9rem;
+  color: 30061b;
+  margin: 10px 0;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ✅ Fix More Articles Button Placement */
+.more-article-button-container {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.more-article-button {
+  background-color:#30061b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.more-article-button:hover {
+  background-color: #4f1f36;
+}

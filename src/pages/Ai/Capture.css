@@ -1,0 +1,87 @@
+/* 🔹 Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+/* 🔹 Camera Box (Full Modal) */
+.camera-box {
+    width: 1000px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+    background: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Camera Feed */
+.video-feed {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* 🔹 Dark Overlay with a Face Cutout */
+.overlay-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    mask-image: radial-gradient(circle 180px at center, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 70%);
+    -webkit-mask-image: radial-gradient(circle 180px at center, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 70%);
+}
+
+/* 🔹 Face Outline (Turns Green when Positioned) */
+.face-outline {
+    position: absolute;
+    width: 380px; /* Increased from 220px */
+    height: 460px; /* Increased from 300px */
+    border: 4px solid white;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: border-color 0.3s ease;
+}
+
+/* 🔹 Instruction Text */
+.capture-instructions {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* ✅ When the Face is Detected, Make Text Green */
+.capture-instructions.face-detected {
+    color: #0f0; /* ✅ Green when correctly positioned */
+}
+
+/* 🔹 Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}

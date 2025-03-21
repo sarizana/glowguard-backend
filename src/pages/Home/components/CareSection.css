@@ -1,0 +1,289 @@
+/* ✅ CareSection - Smaller & Well Balanced */
+.care-section {
+  width: 100%;
+  height: 80vh; /* Reduced size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef1f1;;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+/* ✅ Remove Extra Space Below */
+.swiper-pagination {
+  bottom: 20px !important;  /* Moves the dots up */
+}
+/* ✅ Swiper Slider */
+.care-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.care-slide {
+  position: relative;
+  width: 100%;
+  height: 85vh; /* Adjusted to match section */
+}
+
+/* ✅ Image Positioning - Part of the Section */
+.image-container {
+  width: 45%;
+  margin-left: 5%;
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* ✅ Adjust Image Position */
+.first-slide-img {
+  width: 50%;
+  margin-top: 90px;  /* Adds space at the top */
+  transform: translateY(40px); 
+   max-height: 75vh; /*/* Lowers the image slightly */
+}
+
+
+.care-image {
+  width: 100%;
+  height: auto;
+  max-height: 75vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ✅ Text Placement & Styling */
+.text-overlay {
+  position: absolute;
+  right: 8%;
+  bottom: 30%;
+  text-align: right;
+  max-width: 40%;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1.5s ease-out forwards;
+}
+
+
+/* ✅ First Slide Text Styling */
+.first-slide-text {
+  right: 10%;
+  bottom: 40%;
+  text-align: left;
+  max-width: 50%;
+} 
+
+/* ✅ Title Fix - One Line & Balanced */
+.slide-title {
+  font-size: 3.8rem; /* Slightly smaller */
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  color: #2b2b2b;
+  text-align: left;
+  white-space: nowrap; /* Ensures it stays on ONE line */
+}
+
+/* ✅ Decorative Underline */
+.text-line {
+  width: 600px;
+  height: 2px;
+  background: #30061b;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  position: relative;
+  left: 0%;
+  filter: blur(2px); 
+}
+
+/* ✅ Subtext Styling */
+.slide-subtext {
+  font-size: 1.4rem;
+  font-family: "Playfair Display", serif;
+  color: #4d4d4d;
+  line-height: 1.7;
+  margin-top: 10px;
+  text-align: left;
+}
+
+
+/* ✅ Bigger Button & Slightly More Centered */
+.slide-button {
+  margin-top: 30px;
+  padding: 16px 32px;
+  font-size: 1.3rem;
+  background-color: #30061b;
+  color: white;
+  border: none;
+  column-gap: 49px !important;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 30px;
+  transform: translateX(-10px); /* Moves slightly to the left */
+  
+}
+
+.slide-button:hover {
+  background-color: #815a40;
+}
+.care-section::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(rgba(255, 255, 255, 0.2), transparent);
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: glowEffect 5s infinite alternate;
+}
+
+
+/* ✅ Swiper Pagination & Navigation Styling */
+.swiper-pagination-bullet {
+  background: #30061b!important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #30061b !important;
+  transition: 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #30061b !important;
+}
+/* ✅ Slightly Move the Image to the Left */
+.second-slide-img {
+  width: 40%;
+  max-height: 80vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -30px; /* Moves image slightly left */
+  opacity: 0;
+  margin-top: 7px;  /* Adds space at the top */
+  transform: translateY(40px); 
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+
+/* ✅ Move the Text Leftward */
+.second-slide-text {
+  right: 10%;
+  bottom: 40%;
+  text-align: left;
+  max-width: 50%;
+}
+
+/* ✅ Fix Button Spacing */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Puts one button on left, one on right */
+  gap: 50px;
+  margin-top: 20px;
+  width: 100%; /* Ensures buttons span full width */
+  max-width: 500px; /* Controls spacing so they don't go too far */
+}
+
+  
+
+
+/* ✅ Ensure Both Buttons Stay in Position */
+.slide-button {
+  padding: 14px 27px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* ✅ Left Button Styling */
+.button-left {
+  align-self: flex-start; /* Moves button to the left */
+}
+
+/* ✅ Right Button Styling */
+.button-right {
+  align-self: flex-end; /* Moves button to the right */
+}
+/* ✅ Third Slide Image (Same Size as Others) */
+.third-slide-img {
+  width: 40%;
+  margin-top: 90px;  /* Adds space at the top */
+  transform: translateY(40px); 
+   max-height: 75vh; /*/* Lowers the image slightly */
+  
+
+}
+
+/* ✅ Third Slide Text (Same Position as Others) */
+.third-slide-text {
+  right: 18%;
+  bottom: 40%;
+  text-align: left;
+  max-width: 50%;
+  
+}
+
+/* ✅ Button Styling */
+.third-slide-button {
+  margin-top: 25px;
+  padding: 16px 32px;
+  font-size: 1.3rem;
+  background-color: #30061b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 30px;
+}
+/* ✅ Third Slide Background Enhancement */
+.third-slide-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(255, 255, 255, 0.6), transparent);
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(1px); /* Soft Blur Effect */
+}
+
+
+
+.third-slide-button:hover {
+  background-color: #815a40;
+}
+
+
+/* ✅ Smooth Animation - More Intense */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(8);
+  }
+}
+
+.text-overlay {
+  animation: slideUp 1.8s ease-out forwards;
+}

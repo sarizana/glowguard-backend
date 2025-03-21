@@ -1,0 +1,44 @@
+.skin-rating-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .skin-rating-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .rating-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .rating-circle.selected {
+    border: 3px solid #4b34d3;
+    position: relative;
+  }
+  
+  .rating-circle.selected::after {
+    content: "✔";
+    font-size: 1rem;
+    color: white;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background: #4b34d3;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

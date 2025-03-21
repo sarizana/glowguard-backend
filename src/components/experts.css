@@ -1,0 +1,99 @@
+
+/* Experts List - Circle Image */
+.doctor-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    width: 25%;
+    text-align: center;
+  }
+  
+  .doctor-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .doctor-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Circular images */
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .view-profile-button {
+    margin-top: 15px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .view-profile-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Chat Page - Full Screen Layout */
+  .chat-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .chat-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .chat-header h2 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .chat-input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chat-input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .chat-send-button {
+    background-color: #d2a679;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chat-send-button:hover {
+    background-color: #b68953;
+  }
+  

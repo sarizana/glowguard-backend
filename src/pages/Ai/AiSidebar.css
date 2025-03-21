@@ -1,0 +1,104 @@
+/* Sidebar Container */
+.sidebar-containerr {
+    width: 100px; /* ✅ Decreased width */
+    background: #D6B899;
+    display: flex;
+    justify-content: center;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0; /* ✅ Adjusted padding */
+    justify-content: space-between;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    font-family: "Playfair Display", serif;
+    font-size: 16px; /* ✅ Slightly smaller */
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    margin-bottom: 15px; /* ✅ Adjusted spacing */
+    margin-top: 20px;
+}
+
+/* Sidebar Icons */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.menu li {
+    width: 40px; /* ✅ Smaller */
+    height: 80px; /* ✅ Smaller */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px; /* ✅ Smaller */
+    color: gray;
+    border-radius: 8px; /* ✅ Adjusted */
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+/* ✅ Highlight only the active icon based on the current route */
+.menu li.active {
+    background: #6d3fc0;
+    color: white;
+}
+
+/* ✅ Ensure hover effect works */
+.menu li:hover {
+    background: #5a32b5;
+    color: white;
+}
+
+/* ✅ Profile & Logout Section */
+.user-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+/* ✅ Profile Circle */
+.profile-circle {
+    width: 40px; /* ✅ Smaller */
+    height: 40px;
+    background: #6d3fc0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.profile-circle:hover {
+    background: #5a32b5;
+}
+
+/* ✅ Logout Icon */
+.logout-icon {
+    font-size: 22px;
+    color: gray;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.logout-icon:hover {
+    color: #6d3fc0;
+}

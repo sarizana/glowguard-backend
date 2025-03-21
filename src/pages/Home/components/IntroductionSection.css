@@ -1,0 +1,116 @@
+/* Introduction Section */
+.introduction-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6rem 4rem;
+  background-color: #eef1f1;
+  position: relative;
+}
+
+/* ✅ Move Title to Top Left */
+.intro-title {
+  font-size: 3.4rem;
+  font-weight: light;
+  color: #101010;
+  line-height: 1.2;
+  text-align: left; /* Align to left */
+  position: absolute;
+  top: 5rem; /* Move to top */
+  left: 6rem; /* Align with the content */
+  margin-bottom: 0;
+  padding-left: 43px;
+  margin-left: 20rem;
+}
+/* ✅ Make "GlowGuard" Cursive */
+.intro-title span {
+  font-family: "Playfair Display", serif; /* ✅ Elegant cursive look */
+  font-style: italic;
+  color:#30061b ;
+}
+
+
+/* ✅ Move Paragraph Under Title & Align Left */
+.intro-text-container {
+  flex: 1;
+  max-width: 900px; /* ✅ Increased width to match red outline */
+  text-align: justify; 
+  max-width: 600px;
+  text-align: left; /* Align everything to left */
+  margin-top: -3.3rem; /* ✅ Push down to be under title */
+  margin-left: -29rem; /* ✅ Align with title */
+}
+
+/* ✅ Move Paragraph Under Title & Align Left */
+.intro-text-container {
+  flex: 1;
+  max-width: 900px; /* ✅ Ensure it takes the full width */
+  text-align: justify;
+  margin-top: 6rem; /* ✅ Slightly adjusted spacing under title */
+  margin-left: 0.5rem; /* ✅ Moves text left but NOT too far */
+  padding-right: 4rem; /* ✅ Ensures proper spacing from right */
+}
+
+/* ✅ Adjust Paragraph Width & Alignment */
+.intro-text {
+  font-size: 1.6rem;
+  color: #444;
+  line-height: 2.5rem;
+  max-width: 900px; /* ✅ Ensures full width as drawn */
+  text-align: justify; /* ✅ Makes it evenly spaced */
+}
+/* ✅ Fix "Read More" Button */
+.intro-button {
+  margin-top: 1.5rem;
+  background-color: #30061b; /* Restore the correct color */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.4rem;
+  border-radius: 30px; /* ✅ Restore rounded shape */
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif; /* ✅ Ensures modern text */
+  font-weight: 500;
+}
+
+.intro-button:hover {
+  background-color: #390e24;
+}
+
+
+
+/* ✅ Left Image */
+.intro-image-left {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  animation: floatUpDown 4s infinite alternate ease-in-out;
+}
+
+/* ✅ Right Image */
+.intro-image-right {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  animation: floatUpDownReverse 4s infinite alternate ease-in-out;
+}
+
+/* Floating Animations */
+@keyframes floatUpDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes floatUpDownReverse {
+  from {
+    transform: translateY(-15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

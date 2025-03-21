@@ -1,0 +1,28 @@
+/* Profile Container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* ❌ Prevents unwanted scrollbars */
+}
+
+/* Profile Content */
+.profile-content {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden; /* ✅ Prevents inner scrolling */
+}
+
+/* Sidebar */
+.sidebar-container {
+  width: 260px;
+  min-height: 100vh;
+  overflow: hidden; /* ✅ Ensures no extra scroll inside sidebar */
+}
+
+/* Profile Main */
+.profile-main {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto; /* ✅ Keeps vertical scrolling only where needed */
+  max-height: calc(100vh - 20px); /* ✅ Prevents extra scrolling */
+}

@@ -1,0 +1,226 @@
+.article-page {
+  display: flex;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 270px;
+  padding: 20px;
+  background: #d6bfa7; /* Softer warm tone to match theme */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Category Title */
+.sidebar-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Filter Category */
+.filter-category {
+  margin-bottom: 15px;
+}
+
+/* Filter Toggle Button */
+.filter-toggle {
+  background: #b8926a;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.filter-toggle:hover {
+  background: #9f7952;
+}
+
+/* Filter Options */
+.filter-options {
+  margin-top: 8px;
+  padding-left: 10px;
+  background: #e8d9c4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Checkbox Styling */
+.filter-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-option input {
+  width: 16px;
+  height: 16px;
+  accent-color: #b8865e; /* Custom checkbox color */
+  cursor: pointer;
+}
+
+.filter-option:hover {
+  background: rgba(184, 134, 94, 0.2);
+  border-radius: 5px;
+}
+
+/* Main Content */
+.article-content {
+  flex-grow: 1;
+  padding-left: 30px;
+}
+
+/* Sort By - Modern Design */
+.sort-by {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-by label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.sort-by select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #e8d9c4;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sort-by select:hover {
+  background: #c4a481;
+}
+
+/* Article Grid (5 Rows, 4 Columns) */
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 20px;
+}
+
+/* Article Cards */
+.article-card {
+  position: relative;
+  background: #e8d9c4; /* New theme color */
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.article-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.article-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* More Button */
+.more-link {
+  display: inline-block;
+  color: #b8865e;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #b8865e;
+  transition: 0.3s;
+}
+
+.more-link:hover {
+  background: #b8865e;
+  color: white;
+}
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  background: transparent;
+  border: 2px solid #b8865e;
+  color: #b8865e;
+  padding: 8px 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.pagination-btn:hover {
+  background: #b8865e;
+  color: white;
+}
+
+.pagination-btn.active {
+  background: #b8865e;
+  color: white;
+  border: 2px solid white;
+}
+
+.pagination-dots {
+  font-weight: bold;
+  padding: 8px;
+  color: #b8865e;
+}
+/* Favorite (Heart) Button */
+.favorite-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #8b5e3c; /* Outline color matching your theme */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.favorite-btn:hover {
+  transform: scale(1.2);
+}
+
+/* When Favorited (Filled Heart) */
+.favorite-btn.favorited {
+  color: #b8865e; /* Filled heart color */
+}

@@ -1,0 +1,96 @@
+/* Main Container */
+.third-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #faf3e0;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Question Title */
+.question-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #5a3727;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Options Container */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Individual Option */
+.option {
+  background: #e6dac6; /* More visible color */
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #5a3727;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.option:hover {
+  background: #d6b899;
+  transform: scale(1.02);
+}
+
+/* Selected Option */
+.option.selected {
+  background: #a47551;
+  color: white;
+}
+
+/* Radio Button Style */
+.radio-button {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Privacy Text */
+.privacy-text {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 15px;
+  max-width: 400px;
+}
+
+/* Continue Button */
+.continue-button {
+  background: #a47551;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background 0.3s ease;
+  width: 90%;
+  max-width: 400px;
+}
+
+.continue-button:disabled {
+  background: #b5a399;
+  cursor: not-allowed;
+}
+
+.continue-button:hover:not(:disabled) {
+  background: #8a5c3c;
+}

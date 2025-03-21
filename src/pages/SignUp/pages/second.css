@@ -1,0 +1,86 @@
+.gender-container {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: 50px;
+    background-color: #b9af9f;
+    padding: 40px;
+    border-radius: 15px;
+    width: 450px;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 25px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .gender-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+  
+  .gender-box {
+    background: white;
+    padding: 18px;
+    border: 2px solid #c4c4c4;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .gender-box:hover {
+    background-color: #d8b89a;
+    border-color: #a47551;
+    color: white;
+  }
+  
+  .selected {
+    background-color: #a47551;
+    color: white;
+    border-color: #8a5c3c;
+  }
+  
+  .next-button {
+    background-color: #7d5231;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: 0.3s;
+  }
+  
+  .next-button:disabled {
+    background-color: #715444;
+    cursor: not-allowed;
+  }
+  
+  .next-button:hover:not(:disabled) {
+    background-color: #8a5c3c;
+  }
+  

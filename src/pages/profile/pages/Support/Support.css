@@ -1,0 +1,63 @@
+/* 🔹 Support Container */
+.support-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #FAF3E0; /* Matches website theme */
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* 🔹 Title */
+.support-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5A3727;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Description */
+.support-description {
+  font-size: 1.1rem;
+  color: #5A3727;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Features List */
+.support-features {
+  text-align: left;
+  font-size: 1rem;
+  color: #5A3727;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.support-features li {
+  background: rgba(184, 134, 94, 0.2);
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 🔹 Hover Effect */
+.support-features li:hover {
+  background: rgba(184, 134, 94, 0.4);
+  transform: translateX(5px);
+}
+
+/* 🔹 Conclusion */
+.support-conclusion {
+  font-size: 1.1rem;
+  color: #5A3727;
+  line-height: 1.6;
+  margin-top: 20px;
+  font-weight: bold;
+}

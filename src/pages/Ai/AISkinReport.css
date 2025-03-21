@@ -1,0 +1,334 @@
+/* 🌟 Main Layout */
+.ai-skin-report {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to bottom, #faf3e0, #f7e0c8);
+    font-family: "Poppins", sans-serif;
+}
+
+/* 🌟 Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+/* 🌟 Title */
+.title {
+    font-size: 34px;
+    font-weight: bold;
+    color: #9a7b5a;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    right: 490px;
+}
+
+/* 🌟 Skin Report Container */
+.skin-container {
+    display: flex;
+    width: 1500px;
+    gap: 20px;
+    height: 700px;
+}
+
+/* 🌟 Report Section */
+.report-section {
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌟 Report Header */
+.report-header {
+    margin-bottom: 15px;
+}/* 🌟 Page Title (Centered) */
+.report-title {
+    font-size: 28px; /* Bigger font */
+    font-weight: bold;
+    color: #9F7A5D;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    right: 40px;
+}
+
+/* 🌟 Center GlowGuard Title */
+.report-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    right: 90px;
+}
+
+
+.report-header h2 {
+    text-align: left; /* Align text to the start */
+    font-size: 32px;
+    color: #3e2a1c;
+}
+
+.report-header p {
+    font-size: 17px;
+    color: gray;
+}
+
+.empty-report {
+    text-align: center;
+    font-size: 28px !important; /* Force size */
+    color: #555;
+    padding: 20px;
+}
+
+/* 🌟 Selfie Diagnostic Button */
+.selfie-btn {
+    background: linear-gradient(135deg, #8E6E5E, #C4A381);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    top: 320px;
+    left: 600px;
+}
+
+.selfie-btn:hover {
+    background: linear-gradient(135deg, #7A5E4E, #B08F76);
+}
+
+/* 🌟 Previous Reports Section */
+.history-section {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: 680px; /* ✅ Set max height for scrolling */
+    overflow-y: auto; /* ✅ Enable scrolling */
+}
+
+/* 🌟 Previous Reports Header */
+.history-section h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6d3fc0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* 🌟 Right Section */
+.right-section {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-height: 680px; /* ✅ Set max height for scrolling */
+    overflow-y: auto; /* ✅ Enable scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🌟 Header (Health Status & History Button) */
+.right-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.health-status {
+    background: green;
+    color: white;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.history-btn {
+    background: #d4d4d4;
+    color: black;
+    font-size: 14px;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* 🌟 Skin Score & Condition Text */
+.skin-score-container {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.skin-score {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.skin-condition-text {
+    font-size: 14px;
+    color: gray;
+}
+
+/* 🌟 Scan Face Button */
+.scan-face-btn {
+    background: #8b5cf6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.scan-face-btn:hover {
+    background: #6d3fc0;
+}
+
+/* 🌟 Skin Concerns (Scrollable) */
+.skin-concerns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* 🌟 Concern Item */
+.concern-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f8f8;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 400px;
+}
+.concern-icon {
+    font-size: 26px;
+    color: #6d3fc0; /* Match theme */
+    min-width: 30px; /* Ensure proper spacing */
+}
+
+
+.concern-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.concern-item:hover {
+    background: #ececec;
+}
+
+/* 🌟 Instructions Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 🌟 Instructions List */
+.instructions-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.instructions-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* 🌟 Scan Face Button in Modal */
+.scan-btn {
+    background: #8b5cf6;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.scan-btn:hover {
+    background: #6d3fc0;
+}
+
+/* 🌟 Report Details */
+.report-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.report-item {
+    background: #f8f8f8;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.report-item:hover {
+    background: #ececec;
+}

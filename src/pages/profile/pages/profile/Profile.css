@@ -1,0 +1,187 @@
+/* 🎨 General Styling */
+.personal-info-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Reduce space between sidebar and container */
+  max-width: 850px;
+  margin-left: 20px; /* Align closer to the sidebar */
+  padding: 30px;
+  background: #f5efe6; /* Light beige tone for warmth */
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🖼 Profile Image Section */
+.profile-image-section {
+  text-align: center;
+}
+
+/* Profile Avatar Upload */
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  background: #e6d5c6; /* Softer color for contrast */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+  border: 3px solid #c2a182; /* Adds a subtle border */
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
+}
+
+/* 📷 Uploaded Profile Image */
+.uploaded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* ➕ Upload Text */
+.upload-text {
+  font-size: 28px;
+  color: #8d6e63;
+  font-weight: bold;
+}
+
+/* 📄 Form Section */
+.form-section {
+  flex-grow: 1;
+}
+
+
+
+.sub-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #5c4b51;
+}
+
+/* 📝 Input Fields */
+.input-group {
+  display: flex;
+  gap: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #c2a182;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+  border: 1px solid #a97c50;
+  box-shadow: 0px 4px 10px rgba(169, 124, 80, 0.2);
+}
+
+/* 🎯 Full Width Input */
+.full-width {
+  display: block;
+  width: 100%;
+}
+
+/* 📅 Date of Birth Dropdown */
+.dob-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.dob-container select {
+  flex: 1;
+}
+
+/* 🌐 Connected Accounts */
+.connected-accounts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* 🟢 Colorful Icons */
+.account-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* 🌐 Connected Accounts */
+.connected-accounts {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.connected-accounts li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 8px 0;
+}
+
+.connected-accounts li a {
+  text-decoration: none;
+  color: #3c3c6c;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.connected-accounts li:hover a {
+  color: #6a5acd;
+}
+
+/* 🎨 Colorful Icons */
+.account-icon {
+  font-size: 20px;
+}
+
+.google {
+  color: #DB4437;
+}
+.facebook {
+  color: #1877F2;
+}
+.instagram {
+  color: #C13584;
+}
+/* 💾 Save Button */
+.save-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: #a97c50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.save-button:hover {
+  background: #8c6440;
+}

@@ -1,0 +1,104 @@
+/* ✅ Center Container */
+.experts-container {
+  text-align: center;
+  padding: 50px 0;
+  margin: 7px; /* ✅ Adjusted padding */
+}
+
+/* ✅ Title */
+.experts-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 65px;
+  padding: 24px;
+  color: #5a3727;
+}
+
+/* ✅ FIXED: Reduce Column Spacing & Center Properly */
+.experts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(280px, 1fr)); /* ✅ Ensures proper width */
+  column-gap: 10px; /* ✅ Reduce space between columns */
+  row-gap: 15px; /* ✅ Adjusted row gap */
+  justify-content: center;
+  align-items: start;
+  width: 80%; /* ✅ Adjust to prevent excessive spacing */
+  margin: auto;
+}
+
+/* ✅ Expert Card */
+.expert-card {
+  width: 100%; 
+  max-width: 390px; /* ✅ Fixed size */
+  height: 460px; /* ✅ Ensures same height */
+  margin: auto;
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ✅ Image Styling (SQUARE) */
+.expert-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ✅ Info Section */
+.expert-info h3 {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.expert-info p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+/* ✅ Rating */
+.expert-rating {
+  font-size: 1rem;
+  color: #ffb400;
+  margin-bottom: 10px;
+}
+
+/* ✅ FIXED BUTTON INSIDE THE CARD */
+.expert-card button {
+  background: #5a3727;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: background 0.3s;
+  width: 100%; /* ✅ Full width */
+  max-width: 150px; /* ✅ Limits width */
+}
+
+.expert-card button:hover {
+  background: #8b5e3b;
+}
+
+/* ✅ Responsive: Adjust to 2 Columns on Smaller Screens */
+@media (max-width: 992px) {
+  .experts-grid {
+    grid-template-columns: repeat(3, 1fr); /* ✅ 2 per row */
+    row-gap: 20px; /* ✅ Adjusted for smaller screens */
+  }
+}
+
+/* ✅ Responsive: Adjust to 2 Column on Mobile */
+@media (max-width: 600px) {
+  .experts-grid {
+    grid-template-columns: repeat(2, 1fr); /* ✅ 1 per row */
+    row-gap: 20px;
+  }
+}

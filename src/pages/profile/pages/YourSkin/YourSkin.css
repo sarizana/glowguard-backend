@@ -1,0 +1,71 @@
+/* 🌿 Modern Styling for Your Skin Profile */
+.your-skin-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #faf3e0; /* Soft beige background */
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+}
+
+/* 🏷 Header Styling */
+.your-skin-container h2 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #6b4f4f; /* Deep brown for elegance */
+    margin-bottom: 20px;
+}
+
+/* 📑 Information Card */
+.skin-info {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Section Titles */
+.skin-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4e3629; /* Warm brown */
+    margin-bottom: 8px;
+    border-bottom: 2px solid #d4a373; /* Subtle divider */
+    padding-bottom: 5px;
+}
+
+/* 📝 Individual Info */
+.skin-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 6px;
+    padding: 10px;
+    background: #fdf7f0; /* Light cream */
+    border-radius: 8px;
+}
+
+/* 🌿 Styled "See My Skin Profile" Button */
+.finish-button {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #d4a373, #6b4f4f); /* Elegant gradient */
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}
+
+.finish-button:hover {
+    background: linear-gradient(135deg, #b8895c, #4e3629);
+    transform: scale(1.05);
+}

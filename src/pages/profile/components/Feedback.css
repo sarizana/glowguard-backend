@@ -1,0 +1,126 @@
+/* 🌟 Floating Action Button */
+.feedback-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #6a5acd, #836fff);
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .feedback-btn:hover {
+    background: linear-gradient(135deg, #5a4cb1, #7268d3);
+    transform: translateY(-2px);
+  }
+  
+  /* 🌟 Modal Overlay */
+  .feedback-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* 🌟 Modal Box */
+  .feedback-modal {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    width: 420px;
+    max-width: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  /* 🌟 Close Button */
+  .feedback-modal::before {
+    content: "×";
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 22px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .feedback-modal::before:hover {
+    color: #333;
+  }
+  
+  /* 🌟 Title */
+  .feedback-modal h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  /* 🌟 Textarea & Input */
+  .feedback-modal textarea,
+  .feedback-modal input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .feedback-modal textarea:focus,
+  .feedback-modal input:focus {
+    border-color: #6a5acd;
+    box-shadow: 0px 4px 10px rgba(106, 90, 205, 0.2);
+    outline: none;
+  }
+  
+  /* 🌟 Send Button */
+  .send-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #6a5acd, #836fff);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .send-btn:hover {
+    background: linear-gradient(135deg, #5a4cb1, #7268d3);
+    transform: translateY(-2px);
+  }
+  
+  /* ✨ Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
